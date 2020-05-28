@@ -44,13 +44,13 @@ p {
     height: 80px;
     margin: auto;
 }
-#header p {
-    font-size: 25pt;
-    color: #3b464c;
-    padding-top: 5px;
-    margin: 0;
-    font-weight: bold;
-    text-align: center;
+#header h1 {
+    font-size: 25pt !important;
+    color: #3b464c !important;
+    padding-top: 5px !important;
+    margin: 0 !important;
+    font-weight: bold !important;
+    text-align: center !important;
 }
 .quote {
     font-size: 12pt;
