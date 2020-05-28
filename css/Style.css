@@ -1,6 +1,7 @@
 html {
-    margin: 0;
+    margin: auto;
     padding: 0;
+	display: table;
 }
 body {
     font-family: 'Handlee', cursive;
@@ -9,6 +10,8 @@ body {
     padding: 10px;
     margin: auto;
 	max-width: 500px;
+	display: table-cell;
+	vertical-align: middle;
 }
 h1 {
     font-size: 15pt;
