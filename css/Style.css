@@ -9,7 +9,6 @@ body {
     background-color: #efefef;
     padding: 10px;
     margin: auto;
-	max-width: 500px;
 	display: table-cell;
 	vertical-align: middle;
 }
