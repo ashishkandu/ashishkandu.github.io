@@ -152,6 +152,7 @@ div.gallery {
   border: 1px solid #ccc;
   float: center;
   width: 180px;
+  align: center;
 }
 
 div.gallery:hover {
