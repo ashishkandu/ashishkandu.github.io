@@ -1,129 +1,255 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My Blog</title>
-        <link href="https://ashishkandu.github.io/css/Style.css" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    
-    <body>
-        <!-- header start -->
-        <div id="header" class="section">
-            <img alt="ashish kandu" class="img-circle" src="https://s3.eu-west-2.amazonaws.com/first.bucket01/ccprofile.png">
-            <h1>Ashish Kandu</h1>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ashish Kandu</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea8845e2ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
         </div>
-        <!-- header end -->
-        
-        <!-- About Me section start -->
-        <div class="section">
-            <h1><span>About Me</span></h1>
-            <p>
-                Hey! I'm <strong>Ashish</strong>. Currently, I'm Learning HTML and this is a prototype. I like coding and so far I've learnt various coding languages which will be listed below in skills section. Learning to code gave me <i>problem-solving skills</i> and a way to communicate with others on a technical level. I can also develop websites and use my coding skills to get a better job.
-            </p>
-            <p class="quote">"Part of the journey is the end"</p>
-        </div>
-        <!-- About Me section end -->
-        
-        <!-- My Skills section start -->
-        <div class="section">
-            <h1><span>My Skills</span></h1>
-            <ul>
-                <li>HTML <br />
-                    <progress min="0" max="100" value="60"></progress>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
-                <li>C <br />
-                    <progress min="0" max="100" value="70"></progress>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
-                <li>Java <br />
-                    <progress min="0" max="100" value="40"></progress>
+                <li>
+                    <a href="#services" class="nav-link">Skills</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Gallery</a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav-link">Academic Details</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
+        </nav>
+        <div class="landing-text">
+            <h1>Ashish Kandu</h1>
+            <h6>Software Engineer and Web Developer</h6>
         </div>
-        <!-- My Skills section end -->
-        
-        
-         <!-- Media section start -->
-		 <!--
-        <div class="section">
-            <h1><span>My Media</span></h1>
-            <iframe height="150" width="300" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen frameborder="0"></iframe>
-        </div>
-		-->
-		<div class="section">
-			<h1><span>My Media</span></h1>
-			<div class="gallery">
-				<a target="_blank" href="https://s3.eu-west-2.amazonaws.com/first.bucket01/Gallery/Ghandruk.jpg">
-				<img src="https://s3.eu-west-2.amazonaws.com/first.bucket01/Gallery/Ghandruk.jpg" alt="Ghandruk" width="600" height="400">
-				</a>
-			<div class="desc">Ghandruk 2018</div>
-			</div>
-	
-			<div class="gallery">
-				<a target="_blank" href="https://s3.eu-west-2.amazonaws.com/first.bucket01/Gallery/Wonderla.jpg">
-				<img src="https://s3.eu-west-2.amazonaws.com/first.bucket01/Gallery/Wonderla.jpg" alt="Wonderla" width="600" height="600">
-				</a>
-			<div class="desc">Wonderla 2019</div>
-			</div>
-	
-			<div class="gallery">
-				<a target="_blank" href="https://s3.eu-west-2.amazonaws.com/first.bucket01/Gallery/Family.JPG">
-				<img src="https://s3.eu-west-2.amazonaws.com/first.bucket01/Gallery/Family.JPG" alt="Charminar" width="600" height="400">
-				</a>
-			<div class="desc">Family 2019</div>
-			</div>
-	
-			<div class="gallery">
-				<a target="_blank" href="https://s3.eu-west-2.amazonaws.com/first.bucket01/Gallery/GNITC.jpg">
-				<img src="https://s3.eu-west-2.amazonaws.com/first.bucket01/Gallery/GNITC.jpg" alt="G" width="600" height="400">
-				</a>
-			<div class="desc">College 2020</div>
-			</div>	<br /><br />
-		</div>
-		
-        <!-- Media section end -->
-        
-        <!-- Form section start -->
-       <div class="section">
-            <h1><span>Contact Me</span></h1>
-            
-            <svg class="face" height="100" width="100">
-                <circle cx="50" cy="50" r="50" fill="#FDD835"/>
-                <circle cx="30" cy="30" r="10" fill="#FFFFFF"/>
-                <circle cx="70" cy="30" r="10" fill="#FFFFFF"/>
-                <circle cx="30" cy="30" r="5" fill="#000000"/>
-                <circle cx="70" cy="30" r="5" fill="#000000"/>
-                <path d="M 30 70 q 20 20 40 0" stroke="#FFFFFF" stroke-width="5" fill="none" />
-            </svg>
-                 
-            <form>
-                <input name="name" placeholder="Name" type="text" required /><br/>
-                <input name="email" placeholder="Email" type="email" required /><br/>
-                <textarea name="message" placeholder="Message" required ></textarea>
-                <input type="submit" value="SEND" class="submit" />
-            </form>
-        </div>
-        <!-- Form section end -->
-        
-        <!-- Contacts section start -->
-        <div class="section" id="contacts">
-            <h1><span>Follow Me</span></h1>
-            <div>
-                <a href="#" target="_blank">
-                    <img alt="WhatsApp" src="https://s3.eu-west-2.amazonaws.com/first.bucket01/Gallery/whatsapp.png" />
-                </a>
-                <a href="#">
-                    <img alt="Facebook" src="https://www.sololearn.com/Uploads/icons/facebook.png"/>
-                </a>
-                <a href="#">
-                    <img alt="Twitter" src="https://www.sololearn.com/Uploads/icons/twitter.png" />
-                </a>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+                <img src="images/myprofile.jpg" alt="Photo">
+            </div>
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+                </div>
+                <p>
+                    Hey! I'm <strong>Ashish</strong>. Currently, I'm Learning Web Development and this is a prototype. I
+                    am also pursing my B.Tech Degree in computer science
+                    in Hyderabad.
+                    I like coding and so far I've learnt various coding languages which will be listed below in skills
+                    section.
+                    Learning to code gave me <i>problem-solving skills</i> and a way to communicate with others on a
+                    technical level. I can also develop websites and use my coding skills to get a better job.
+                </p>
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-whatsapp-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <!-- Contacts section end -->
-        
-        <div class="copyright">
-            &copy; 2020 My Blog. All rights reserved.
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Skills</h1>
+                <h6>What I have learned</h6>
+            </div>
+            <div class="my-skills">
+                <div class="skill" data-aos="fade-in" data-aos-delay="300">
+                    <div class="icon-container">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h1>Python</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla enim iure aliquam illum fugiat
+                        excepturi eius dolorum provident porro repudiandae.</p>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h1>Web Devlopment</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla enim iure aliquam illum fugiat
+                        excepturi eius dolorum provident porro repudiandae.</p>
+                </div>
+                <div class="skill" data-aos="fade-in" data-aos-delay="900">
+                    <div class="icon-container">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h1>Java</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla enim iure aliquam illum fugiat
+                        excepturi eius dolorum provident porro repudiandae.</p>
+                </div>
+            </div>
         </div>
-        
-    </body>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Gallery</h1>
+                <h6>View some of my recent visited place</h6>
+            </div>
+            <!-- portfolio 1 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right " data-aos="fade-right" data-aos-delay="300">
+                    <img src="/images/Ghandruk.jpg" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                    <h6>2018</h6>
+                    <h1>Ghandruk</h1>
+                    <p>
+                        Ghandruk is a common place for treks in the Annapurna range of Nepal (i.e. specially for
+                        Annapurna Base camp trek), with various trails and accommodation possibilities. From Ghandruk
+                        there are views to the mountains of Annapurna including Machapuchare and Himchuli. It is the
+                        route to Annapurna Base Camp and Poon hill. Gurung people are common in this village.
+                    </p>
+                    <a href="#" class="cta">Visit</a>
+                </div>
+            </div>
+            <!-- portfolio 2 -->
+            <div class="portfolio-item">
+                <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
+                    <h6>2019</h6>
+                    <h1>Wonderla</h1>
+                    <p>
+                        Wonderla is one of the largest chain of amusement parks in India. Wonderla Hyderabad offers 28
+                        land based rides and 18 water based attractions on 50 acres of land. Wonderla Amusement Park
+                        is located 28 km away from Hyderabad City.
+                    </p>
+                    <a href="#" class="cta">Visit</a>
+                </div>
+                <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
+                    <img src="/images/Wonderla.jpg" alt="">
+                </div>
+            </div>
+            <!-- portfolio 3 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="1500">
+                    <img src="/images/Charminar0.jpg" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">
+                    <h6>2020</h6>
+                    <h1>Charminar</h1>
+                    <p>
+                        The Charminar, constructed in 1591, is a monument and mosque located in Hyderabad, Telangana,
+                        India. The landmark has become known globally as a symbol of Hyderabad and is listed among the
+                        most recognized structures in India.
+                    </p>
+                    <a href="#" class="cta">Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Academic Details</h1>
+                <h6>School and College</h6>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li class="date" data-date="2011 - Present">
+                        <h1>School</h1>
+                        <p>
+                            I completed my schooling in my own native place in year 2015.
+                        </p>
+                    </li>
+                    <li class="date" data-date="2008 - 2011">
+                        <h1>College</h1>
+                        <p>
+                            For my intermediate, I enrolled in Millenium College in Palpa and completed it in year 2018.
+                        </p>
+                    </li>
+                    <li class="date" data-date="2002 - 2007">
+                        <h1>University</h1>
+                        <p>
+                            Currently I'm pursing my B.Tech degree in Computer Science Engineering in Hyderabad, India.
+                            It is my second year in Guru
+                            Nanak Institutions of Technical Campus.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1>
+                <h6>Let's Work together</h6>
+            </div>
+            <form action="" data-aos="fade-up" data-aos-delay="300">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                <!-- <label for="services=">Services:</label>
+                <select name="services" id="service">
+                    <option value="Web Design"></option>
+                    <option value="Web Devlopment"></option>
+                    <option value="Web Design/Development"></option>
+                </select> -->
+                <label for="message=">Message:</label>
+                <textarea name="message" id="message" cols="10" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <p>&copy; 2020 Ashish Kandu</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+
 </html>
