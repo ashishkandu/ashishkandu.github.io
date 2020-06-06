@@ -502,6 +502,10 @@ input[type="submit"]:hover {
         font-size: 8rem;
     }
 
+    :active {
+        -webkit-tap-highlight-color: transparent;
+    }
+
     .section-heading h1 {
         font-size: 3rem;
     }
