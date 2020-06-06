@@ -240,7 +240,8 @@
                 <h1>Contact</h1>
                 <h6>Leave a message for me</h6>
             </div>
-            <form action="" data-aos="fade-up" data-aos-delay="300">
+            <form name="submit-to-google-sheet" id="submit-to-google-sheet" action="" data-aos="fade-up"
+                data-aos-delay="300">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                 <label for="email">Email:</label>
@@ -269,6 +270,21 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/ea8845e2ca.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbzANMvsFDryvrcZ9pSCPbLAq-Ez85C7WIoCNzRwWhTpNuoZ1iqs/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(document.getElementById('submit-to-google-sheet').reset())
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 
 </html>
