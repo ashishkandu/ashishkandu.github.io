@@ -1,6 +1,7 @@
 @font-face {
     font-family: Historica;
     src: url(/TheHistoriaDemo.ttf);
+    font-display: swap;
 }
 
 /*Start global*/
