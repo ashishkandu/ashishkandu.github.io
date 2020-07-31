@@ -241,7 +241,7 @@
                 <h1>Contact</h1>
                 <h6>Leave a message for me</h6>
             </div>
-            <form name="submit-to-google-sheet" id="submit-to-google-sheet" action="" data-aos="fade-up"
+            <form name="submit-to-google-sheet" id="submit-to-google-sheet" action="" onsubmit="myFunction()" data-aos="fade-up"
                 data-aos-delay="300">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name..." required>
@@ -287,6 +287,11 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+    <script>
+    function myFunction() {
+      alert("The form was submitted");
+    }
+  </script>
 </body>
 
 </html>
